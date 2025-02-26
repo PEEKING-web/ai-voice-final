@@ -89,3 +89,12 @@ minikube service ai-voice-assistant-service --u
 Logging Implementation
 
  implemented logging to track API requests and responses. Logs 
+
+
+
+
+
+
+
+ add gemini key and mongo uri in .env file
+ 
