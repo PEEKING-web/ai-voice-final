@@ -1,1 +1,10 @@
 .env
+docker-compose.override.yml
+node_modules/
+venv/
+__pycache__/
+
+
+.vscode/
+.DS_Store
+Thumbs.db
