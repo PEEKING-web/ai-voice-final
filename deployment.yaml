@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ai-voice-assistant
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: ai-voice-assistant
+  template:
+    metadata:
+      labels:
+        app: ai-voice-assistant
+    spec:
+      containers:
+      - name: ai-voice-assistant
+        image: peekingzera/ai_voice_assistant:latest
+        ports:
+        - containerPort: 8000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ai-voice-assistant-service
+spec:
+  selector:
+    app: ai-voice-assistant
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8000
+  type: LoadBalancer

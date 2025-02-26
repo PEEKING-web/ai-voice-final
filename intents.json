@@ -1,0 +1,6 @@
+{
+    "greeting": ["hello", "hi", "hey"],
+    "weather": ["weather", "temperature"],
+    "time": ["time", "clock"],
+    "goodbye": ["bye", "goodbye"]
+}

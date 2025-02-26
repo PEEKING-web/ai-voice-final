@@ -1,0 +1,318 @@
+2025-02-24 13:59:29,169 - User: hello | Response: Hi there! How can I assist you?
+2025-02-24 13:59:36,710 - User: hello | Response: Hi there! How can I assist you?
+2025-02-24 14:00:05,146 - User: hello | Response: Hi there! How can I assist you?
+2025-02-24 14:01:46,228 - User: hello | Response: Hi there! How can I assist you?
+2025-02-24 14:01:52,228 - User: hello | Response: Hi there! How can I assist you?
+2025-02-24 14:01:53,270 - User: hello | Response: Hi there! How can I assist you?
+2025-02-24 14:03:30,298 - User: hello | Response: Hi there! How can I assist you?
+2025-02-24 14:05:54,810 - User: how are you doing my guy  | Response: I'm not sure how to respond to that.
+2025-02-24 14:06:12,329 - User: whats pythagoras theorem | Response: I'm not sure how to respond to that.
+2025-02-25 16:49:06,473 - User: whats pythagoras theorem | Response: OpenAI API error: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-02-25 16:50:48,369 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-02-25 16:50:48,370 - Retrying request to /chat/completions in 0.375333 seconds
+2025-02-25 16:50:49,026 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-02-25 16:50:49,027 - Retrying request to /chat/completions in 0.872938 seconds
+2025-02-25 16:50:50,177 - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-02-25 16:50:50,177 - User: whats pythagoras theorem | Response: OpenAI API error: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-02-25 16:57:21,753 - User: hello | Response: Hi there! How can I assist you?
+2025-02-25 16:57:47,011 - User: can you tell me about pythagoras theorem | Response: **Pythagoras Theorem**
+
+The Pythagorean theorem, also known as Pythagoras's theorem, is a fundamental relation in geometry that describes the relationship between the three sides of a right triangle.
+
+**Statement:**
+
+In a right triangle, the sum of the squares of the two shorter sides (legs) is equal to the square of the longest side (hypotenuse).
+
+**Formula:**
+
+```
+a² + b² = c²
+```
+
+where:
+
+* a and b are the lengths of the two shorter sides (legs) of the triangle
+* c is the length of the longest side (hypotenuse) of the triangle
+
+**Explanation:**
+
+If we have a right triangle with legs of length a and b and a hypotenuse of length c, we can visualize a square with side length c. This square can be divided into four smaller squares with side lengths a and b, as shown in the diagram below:
+
+[Image of Pythagorean theorem diagram]
+
+The area of the large square is c², and the areas of the four smaller squares are a², b², a², and b². Therefore, the total area of the smaller squares is 2(a² + b²).
+
+Since the area of the large square is equal to the total area of the smaller squares, we have:
+
+```
+c² = 2(a² + b²)
+```
+
+Dividing both sides of the equation by 2, we get:
+
+```
+a² + b² = c²
+```
+
+**Applications:**
+
+The Pythagorean theorem has numerous applications in geometry, trigonometry, and other fields, including:
+
+* Calculating the length of the missing side of a right triangle
+* Determining the distance between two points in a plane
+* Finding the area of a square or rectangle
+* Solving problems involving trusses and other structures with right angles
+* In trigonometry, the Pythagorean theorem is used to derive the trigonometric identities:
+
+    ```
+    sin² \u03b8 + cos² \u03b8 = 1
+    tan² \u03b8 + 1 = sec² \u03b8
+    cot² \u03b8 + 1 = csc² \u03b8
+    ```
+
+**Historical Importance:**
+
+The Pythagorean theorem is attributed to the Greek philosopher Pythagoras (c. 570-495 BC). However, evidence suggests that the theorem was known to earlier civilizations in Mesopotamia and India.
+
+The theorem's discovery was a major milestone in mathematics, as it provided a universal method for solving right triangle problems and understanding geometric relationships. It is still a fundamental theorem taught in geometry classes today.
+2025-02-25 17:05:44,514 - User: tell me a joke | Response: {'response_text': 'Why did the golfer wear two pairs of pants?\n\nIn case he got a hole-in-one!', 'audio_file': 'response.mp3'}
+2025-02-25 17:06:50,480 - User: tell me a joke | Response: {'response_text': 'Why did the scarecrow win an award?\n\nBecause he was outstanding in his field!', 'audio_file': 'response.mp3'}
+2025-02-25 17:07:59,558 - User: tell me a joke | Response: {'response_text': 'Why did the golfer wear two pairs of pants?\n\nIn case he got a hole-in-one!', 'audio_file': 'response.mp3'}
+2025-02-25 17:23:22,464 - User: string | Response: {'response_text': '**Definition:**\n\nA string is a sequence of characters enclosed in single or double quotes. It represents a collection of text data in a programming language.\n\n**Syntax:**\n\n```\n// Single quotes\n\'Hello, world!\'\n\n// Double quotes\n"Hello, world!"\n```\n\n**Properties:**\n\n* **Length:** The number of characters in the string.\n* **Immutability:** Strings are immutable in most programming languages, meaning they cannot be modified once created.\n\n**Operations:**\n\n* **Concatenation:** Joining two strings to form a new one (using the `+` operator).\n* **Slicing:** Extracting a substring from a string (using the `[]` or `substring()` method).\n* **Searching:** Finding the first occurrence of a character or substring (using the `indexOf()` or `lastIndexOf()` methods).\n* **Replacement:** Replacing a substring with another one (using the `replace()` method).\n* **Format string:** Inserting values into a string placeholder (using the `format()` method).\n\n**Example:**\n\n```\nconst name = \'John Doe\';\nconst greeting = \'Hello, \' + name + \'!\';\n\nconsole.log(greeting); // Output: Hello, John Doe!\n```\n\n**Advantages of Strings:**\n\n* Store text data in a structured way.\n* Can be manipulated and processed easily using string functions.\n* Provide a convenient way to represent human-readable text.\n\n**Note:**\n\n* In some programming languages, strings may be mutable (e.g., JavaScript).\n* String literals (constant strings) are often used to represent static text values.\n* Strings can be used to create arrays of characters or build complex data structures.', 'audio_file': 'response.mp3'}
+2025-02-25 17:26:41,474 - User: tell me a joke | Response: {'response_text': 'What do you call a fish with no eyes?\n\nFsh!', 'audio_file': 'response.mp3'}
+2025-02-25 17:33:20,493 - User: hello | Response: {'response_text': 'Hi there! How can I assist you?', 'audio_file': 'response.mp3'}
+2025-02-25 17:33:28,120 - User: hello | Response: {'response_text': 'Hi there! How can I assist you?', 'audio_file': 'response.mp3'}
+2025-02-25 17:33:29,631 - User: hello | Response: {'response_text': 'Hi there! How can I assist you?', 'audio_file': 'response.mp3'}
+2025-02-25 17:33:34,507 - User: hello | Response: {'response_text': 'Hi there! How can I assist you?', 'audio_file': 'response.mp3'}
+2025-02-25 17:33:38,269 - User: hello | Response: {'response_text': 'Hi there! How can I assist you?', 'audio_file': 'response.mp3'}
+2025-02-25 17:33:53,150 - User: hello | Response: {'response_text': 'Hi there! How can I assist you?', 'audio_file': 'response.mp3'}
+2025-02-25 17:39:12,409 - User: hello | Response: {'response_text': 'Hi there! How can I assist you?', 'audio_file': 'response.mp3'}
+2025-02-25 17:41:27,676 - User: hello | Response: {'response_text': 'Hi there! How can I assist you?', 'audio_file': 'response.mp3'}
+2025-02-25 17:41:40,927 - User: hello | Response: {'response_text': 'Hi there! How can I assist you?', 'audio_file': 'response.mp3'}
+2025-02-25 17:43:06,656 - User: hello | Response: {'response_text': 'Hi there! How can I assist you?', 'audio_file': 'response.mp3'}
+2025-02-25 17:43:54,028 - User: hello | Response: {'response_text': 'Hi there! How can I assist you?', 'audio_file': 'response.mp3'}
+2025-02-25 17:44:12,271 - User: what does identity means | Response: {'response_text': "**Identity** refers to a person's sense of self, including their unique characteristics, beliefs, values, experiences, and social connections. It encompasses the following key aspects:\n\n**1. Personal Attributes:**\n* Physical appearance, abilities, and personality traits\n* Interests, hobbies, and passions\n* Core values and beliefs\n* Skills and knowledge\n\n**2. Social Roles:**\n* Relationships with others (e.g., family, friends, colleagues)\n* Membership in groups or organizations\n* Social norms and expectations\n\n**3. Cultural Heritage:**\n* Nationality, ethnicity, and cultural background\n* Cultural values, traditions, and practices\n* Language and cultural identity\n\n**4. Psychological Factors:**\n* Self-awareness, self-concept, and self-esteem\n* Psychological needs, motivations, and emotions\n\n**5. Historical Context:**\n* Life experiences and events that shape one's identity\n* Social, political, and economic factors that influence identity formation\n\n**6. Fluidity and Change:**\n* Identity is not static but evolves over time\n* Influences such as new experiences, social interactions, and personal growth can shape identity\n\n**Importance of Identity:**\n\n* Provides a sense of belonging and stability\n* Guides behavior, decision-making, and interactions with others\n* Influences mental health, well-being, and self-acceptance\n* Contributes to social cohesion and diversity", 'audio_file': 'response.mp3'}
+2025-02-25 17:45:09,226 - User: what does identity means | Response: {'response_text': '**Identity** is a complex and multifaceted concept that refers to the unique characteristics and traits that define an individual or group. It encompasses a wide range of aspects, including:\n\n**Personal Identity:** The inner sense of who we are, our thoughts, feelings, and experiences. It includes our:\n\n* **Self-concept:** Our beliefs and perceptions about ourselves.\n* **Self-esteem:** Our evaluation of our worthiness.\n* **Personal history:** Our unique experiences, beliefs, and values.\n\n**Social Identity:** The sense of belonging to a particular group or category. It includes our:\n\n* **Social roles:** The roles we play in society, such as student, parent, or employee.\n* **Social class:** Our economic and social status.\n* **Culture:** Our shared beliefs, values, and practices.\n\n**Group Identity:** The sense of belonging to a specific group that shares certain characteristics or interests. It includes our:\n\n* **National identity:** Our connection to our country or nation.\n* **Ethnic identity:** Our membership in a particular ethnic group.\n* **Religious identity:** Our adherence to a particular religion.\n\n**Fluid and Dynamic:** Identity is not static but rather fluid and dynamic. It can change and evolve throughout our lives as we experience new experiences and learn more about ourselves and the world around us.\n\n**Interconnected:** Different aspects of identity are interconnected and influence each other. For example, our personal identity can shape our social identity, and our social identity can impact our personal beliefs and values.\n\n**Social Construction:** Identity is not simply a given but is also influenced by social and cultural factors. Our identity can be shaped by the expectations and norms of the society in which we live.\n\n**Contested and Negotiated:** Identity is often contested and negotiated. We may have different identities that we assert in different contexts. For example, we may identify as a student in our class but a performer on stage.\n\n**Importance of Identity:** Identity plays a crucial role in our well-being and our sense of belonging in the world. It helps us make sense of our experiences, motivates our actions, and provides us with a sense of purpose.', 'audio_file': 'response.mp3'}
+2025-02-25 17:51:16,228 - User: tell me a joke | Response: {'response_text': 'What do you call a snowman with a six-pack? An abdominal snowman.', 'audio_file': 'response.mp3'}
+2025-02-25 17:51:36,980 - User: hello | Response: {'response_text': 'Hi there! How can I assist you?', 'audio_file': 'response.mp3'}
+2025-02-25 17:51:43,469 - User: hello | Response: {'response_text': 'Hi there! How can I assist you?', 'audio_file': 'response.mp3'}
+2025-02-25 17:51:59,567 - User: hello | Response: {'response_text': 'Hi there! How can I assist you?', 'audio_file': 'response.mp3'}
+2025-02-25 17:53:40,661 - User: tell me a joke | Response: {'response_text': 'Why did the scarecrow win an award?\n\nBecause he was outstanding in his field!', 'audio_file': 'response.mp3'}
+2025-02-25 17:56:09,346 - User: tell me a joke | Response: {'response_text': 'What do you call a cow with no legs?\n\nGround beef.', 'audio_file': 'response.mp3'}
+2025-02-25 17:57:05,309 - User: how are you brother | Response: {'response_text': 'I am well, thank you for asking. I am a language model, so I do not have a physical body or the capacity to experience emotions like a human. However, I am designed to be informative and helpful, and I am always happy to assist you in any way that I can. How can I help you today?', 'audio_file': 'response.mp3'}
+2025-02-25 17:59:16,919 - User: how are you brother | Response: {'response_text': 'As an AI large language model, I am not capable of having emotions or human experiences, so I do not have siblings or the capacity to feel like a brother. I am designed to assist with text-based tasks based on the knowledge and data I have been trained on.', 'audio_file': 'response.mp3'}
+2025-02-25 18:00:05,044 - User: how are you brother | Response: As an AI chatbot assistant, I don't have physical feelings or the capacity to experience emotions like humans. However, I'm here to help you with any questions or tasks you may have. How can I assist you today?
+2025-02-25 18:00:48,946 - User: hello | Response: Hi there! How can I assist you?
+2025-02-25 18:02:06,149 - User: hello | Response: Hi there! How can I assist you?
+2025-02-25 18:02:35,209 - User: hi | Response: Hello there! How can I help you today?
+2025-02-25 18:04:29,448 - User: hello | Response: {'response_text': 'Hi there! How can I assist you?', 'audio_file': 'response.mp3'}
+2025-02-25 18:04:29,640 - Error processing voice input: 'fp' is not a file-like object or it does not take bytes: 'dict' object has no attribute 'strip'
+2025-02-25 18:04:43,102 - Error processing voice input: 400: Input text cannot be empty.
+2025-02-25 18:06:12,584 - User: how are you | Response: {'response_text': 'I am an AI assistant designed to help you with a wide variety of tasks and answer your questions to the best of my abilities. I don\'t have personal feelings or emotions, so I don\'t have the capacity to experience being "well" or "badly" in the same way that humans do. However, I am always here to assist you and provide information to the best of my abilities. How can I help you today?', 'audio_file': 'response.mp3'}
+2025-02-25 18:06:12,600 - Error processing voice input: 'fp' is not a file-like object or it does not take bytes: 'dict' object has no attribute 'strip'
+2025-02-25 18:06:36,354 - User: how are you brother | Response: {'response_text': 'I am well, thank you. I am always happy to help you with anything you need. How can I assist you today?', 'audio_file': 'response.mp3'}
+2025-02-25 18:06:36,373 - Error processing voice input: 'fp' is not a file-like object or it does not take bytes: 'dict' object has no attribute 'strip'
+2025-02-25 18:11:33,516 - User: hello | Response: Hi there! How can I assist you?
+2025-02-25 18:11:48,902 - User: how are you brother | Response: I am doing well, thank you for asking. I am a large language model, trained by Google. I do not have a physical body or the capacity to experience emotions like humans, but I am designed to provide information and assist users to the best of my abilities. How can I help you today?
+2025-02-25 18:12:18,642 - User: hi | Response: Hello! How can I help you?
+2025-02-25 18:18:40,392 - User: hello | Response: Hi there! How can I assist you?
+2025-02-25 18:18:54,826 - User: hi | Response: Hello! How are you doing today?
+2025-02-25 18:19:04,551 - User: how are you brother | Response: I am well, thank you for asking. I am a large language model, trained by Google. I do not have a physical body or the ability to feel emotions, but I am here to help you with your questions and tasks to the best of my abilities.
+2025-02-25 18:29:09,945 - User: hi | Response: Hello! How can I assist you today?
+2025-02-25 18:29:33,923 - User: how are you brother | Response: I am well, thank you for asking. I am a large language model, trained by Google. I do not have a physical body or the ability to experience emotions like humans, so I do not have brothers or sisters.
+2025-02-25 18:34:12,729 - User: tell me something about shivaji maharaj | Response: **Birth and Early Life:**
+
+* Born in 1630 in the Maratha kingdom of Shivneri
+* Son of Shahaji Bhonsle and Jijabai
+
+**Military Prowess:**
+
+* Led the Maratha Empire to independence from the Mughal Empire
+* Developed innovative guerrilla warfare tactics, known as "Shivaji's Ganimi Kava"
+* Captured many Mughal forts, including Torna and Kalyan
+
+**Administrative Skills:**
+
+* Established a well-organized kingdom with a disciplined army and a strong administrative system
+* Created a navy to protect the Maratha coast
+* Promoted education, literature, and infrastructure
+
+**Political Vision:**
+
+* United Maratha chieftains under his leadership
+* Established an independent Maratha kingdom called Swarajya
+* Resisted the powerful Mughal and Adilshahi empires with clever diplomacy and military strategies
+
+**Religious Tolerance:**
+
+* Respected all religions, including Hinduism, Islam, and Jainism
+* Protected mosques and shrines during his conquests
+* Promoted harmony between different communities
+
+**Legacy and Influence:**
+
+* Known as the "Father of the Maratha Nation"
+* His legacy of bravery, military genius, and administrative skills continues to inspire Indians today
+* Numerous monuments, places, and institutions in India bear his name
+* The Indian Navy's largest aircraft carrier is named INS Vikramaditya, after Shivaji's coronation title of Chhatrapati Shivaji Maharaj
+2025-02-25 18:36:34,135 - User: hi | Response: Hello there! How can I assist you today?
+2025-02-25 18:36:40,503 - User: why | Response: Incomplete question. Please provide the complete question.
+2025-02-25 18:39:49,515 - User: why is earth round | Response: The Earth is round due to the following reasons:
+
+* **Gravity:** The Earth's mass exerts a gravitational force that pulls its material inward towards its center. This force acts equally in all directions, resulting in a spherical shape.
+* **Hydrostatic Equilibrium:** The Earth is a fluid body, consisting of molten rock and a liquid outer core. Fluids in equilibrium distribute their mass to minimize their potential energy. In the Earth's case, this results in a spherical shape where the surface is perpendicular to the direction of gravity at each point.
+* **Rotation:** The Earth's rotation creates an outward centrifugal force that acts opposite to gravity. This force is stronger at the equator than at the poles, causing the Earth to bulge at the equator and flatten at the poles. This effect is known as the Earth's oblateness.
+* **Conservation of Angular Momentum:** The Earth formed as a rotating body with a certain amount of angular momentum. As the Earth cooled and contracted, its rotation speed increased to conserve angular momentum. This faster rotation also contributed to the Earth's flattened shape at the poles.
+
+As a result of these factors, the Earth is not perfectly spherical but slightly flattened at the poles and swollen at the equator. This shape is known as an oblate spheroid.
+2025-02-25 18:47:54,648 - User: why is earth round | Response: Earth is round because it is a planet. Planets are formed when gravity pulls together a large amount of mass, such as gas, dust, and rock. As the mass accumulates, it forms a sphere because this shape has the lowest surface area for its volume, which means that it requires the least amount of energy to maintain.
+
+Earth's round shape also contributes to its habitability. The curved surface of the Earth allows for the distribution of sunlight and heat, creating a variety of climates and ecosystems. It also helps to regulate the Earth's temperature, as the oceans and atmosphere can absorb and release heat.
+
+**Evidence for Earth's Roundness:**
+
+* **Ships disappearing over the horizon:** As ships sail away from land, they gradually disappear from view, starting with the hull and then the sails. This is because the Earth's curvature causes the horizon to be lower in the distance, obscuring objects that are far away.
+* **Eclipses:** During a solar eclipse, the Moon's shadow falls on Earth in a circular shape, indicating the Earth's roundness.
+* **Satellite images:** Satellite images taken from space clearly show the spherical shape of Earth.
+* **Measurements by surveyors:** Surveyors use instruments to measure the curvature of the Earth's surface, which provides evidence for its roundness.
+
+The roundness of Earth is a fundamental characteristic of our planet that has played a crucial role in its formation and evolution.
+2025-02-25 18:53:27,493 - User: tell me one line about pythgoras theorem | Response: In a right-angled triangle, the square of the hypotenuse is equal to the sum of the squares of the other two sides.
+2025-02-25 18:53:56,654 - User: hello | Response: Hi there! How can I assist you?
+2025-02-25 18:57:19,095 - User: i want to know about rainbow | Response: **What is a Rainbow?**
+
+A rainbow is a multicolored arc in the sky caused by the refraction, dispersion, and reflection of sunlight in water droplets resulting in a spectrum of light appearing in the sky.
+
+**How Rainbows Form:**
+
+1. **Sunlight:** Sunlight enters water droplets in the atmosphere.
+2. **Refraction:** The sunlight is bent (refracted) as it enters and exits the droplets.
+3. **Dispersion:** The different wavelengths of sunlight are refracted at different angles, causing them to spread out.
+4. **Reflection:** The refracted sunlight bounces off the back of the water droplet (reflection).
+5. **Second Refraction:** As the sunlight exits the droplet, it is refracted again.
+6. **Rainbow:** The combination of all these processes produces a rainbow with an arc-shaped pattern.
+
+**Colors of the Rainbow:**
+
+The rainbow displays the following colors from the outer edge to the inner edge:
+
+* Red
+* Orange
+* Yellow
+* Green
+* Blue
+* Indigo
+* Violet
+
+**Types of Rainbows:**
+
+* **Primary Rainbow:** The most common rainbow, with the colors listed above.
+* **Secondary Rainbow:** A less common rainbow that appears outside the primary rainbow with the color order reversed.
+* **Supernumerary Rainbow:** A fainter rainbow that sometimes appears just inside the primary rainbow.
+* **Lunar Rainbow (Moonbow):** Similar to a rainbow, but formed by moonlight instead of sunlight.
+* **Fogbow:** A rainbow that forms in fog instead of raindrops.
+
+**Symbolism and Folklore:**
+
+Rainbows have been a symbol of hope, beauty, and promise in many cultures throughout history. In Christianity, they are often associated with God's covenant with Noah. In mythology and fairy tales, rainbows are sometimes depicted as bridges to other worlds or portals to magical realms.
+
+**Scientific Observations:**
+
+* Rainbows are always formed in a circle, but we typically only see an arc because the rest of the circle is below the horizon.
+* The center of the rainbow is always directly opposite the sun.
+* The size and intensity of the rainbow depend on the size and number of water droplets in the atmosphere.
+2025-02-25 23:13:14,127 - User: hi | Response: Hello there! How may I assist you today?
+2025-02-25 23:22:19,806 - User: how are you doing | Response: I'm not sure how to respond to that.
+2025-02-25 23:22:35,155 - INFO - User Input: tell me meaning of mouse
+2025-02-25 23:22:35,155 - INFO - AI Response: I'm not sure how to respond to that.
+2025-02-25 23:22:35,659 - INFO - Generated Audio File: 058de1a2-d3f2-4657-8a1f-b12b7bef03a6.mp3
+2025-02-25 23:22:49,789 - INFO - User Input: tell me one line about pythgoras theorem
+2025-02-25 23:22:49,789 - INFO - AI Response: I'm not sure how to respond to that.
+2025-02-25 23:22:50,394 - INFO - Generated Audio File: 110ef6b5-2917-46f1-90de-5e2677053f1f.mp3
+2025-02-25 23:22:57,666 - INFO - User Input: tell me one line about pythgoras theorem
+2025-02-25 23:22:57,666 - INFO - AI Response: I'm not sure how to respond to that.
+2025-02-25 23:22:57,974 - INFO - Generated Audio File: d5083ba6-4cbb-4add-bcf1-01cd26efcfa0.mp3
+2025-02-25 23:23:11,193 - INFO - User Input: tell me meaning of mouse
+2025-02-25 23:23:11,193 - INFO - AI Response: I'm not sure how to respond to that.
+2025-02-25 23:23:11,452 - INFO - Generated Audio File: a8e44881-0f31-4ff4-ac8a-261607c44e27.mp3
+2025-02-25 23:23:29,865 - INFO - User Input: tell me meaning of mouse
+2025-02-25 23:23:29,865 - INFO - AI Response: I'm not sure how to respond to that.
+2025-02-25 23:23:30,147 - INFO - Generated Audio File: ed55e22f-343a-44d2-a99c-94416d338da1.mp3
+2025-02-25 23:23:38,267 - Error processing voice input: 400: Input text cannot be empty.
+2025-02-25 23:23:44,907 - User: hello | Response: Hi there! How can I assist you?
+2025-02-25 23:23:53,367 - User: what is a rainbow | Response: I'm not sure how to respond to that.
+2025-02-25 23:25:10,447 - User: what is your name | Response: I'm not sure how to respond to that.
+2025-02-25 23:26:03,368 - User: what is your name | Response: I'm not sure how to respond to that.
+2025-02-25 23:27:35,756 - User: tell me one line about pythgoras theorem | Response: I'm not sure how to respond to that.
+2025-02-25 23:28:37,277 - User: what is your name | Response: I'm not sure how to respond to that.
+2025-02-25 23:28:48,459 - Error processing voice input: 400: Input text cannot be empty.
+2025-02-25 23:30:16,994 - User: what is your name | Response: I'm not sure how to respond to that.
+2025-02-25 23:30:23,165 - User: what is your name | Response: I'm not sure how to respond to that.
+2025-02-25 23:30:31,637 - User: how are you doing today | Response: I'm not sure how to respond to that.
+2025-02-25 23:30:36,006 - User: tell me one line about pythgoras theorem | Response: I'm not sure how to respond to that.
+2025-02-25 23:34:19,747 - User: what is your name | Response: I'm not sure how to respond to that.
+2025-02-25 23:34:32,185 - User: can you tell me what an apple is | Response: I'm not sure how to respond to that.
+2025-02-25 23:34:40,006 - User: can you tell me what an apple is | Response: I'm not sure how to respond to that.
+2025-02-25 23:35:18,899 - User: hello | Response: Hi there! How can I assist you?
+2025-02-25 23:50:51,867 - User: hello | Response: Hi there! How can I assist you?
+2025-02-25 23:51:00,128 - INFO - Received input: how are you today
+2025-02-25 23:51:00,679 - INFO - Generated response: I'm not sure how to respond to that.
+2025-02-25 23:51:13,763 - INFO - Received input: can you tell me what an apple is
+2025-02-25 23:51:14,117 - INFO - Generated response: I'm not sure how to respond to that.
+2025-02-25 23:51:27,796 - INFO - Received input: what is figma
+2025-02-25 23:51:28,173 - INFO - Generated response: I'm not sure how to respond to that.
+2025-02-25 23:51:55,543 - INFO - Received input: how are you today
+2025-02-25 23:51:55,897 - INFO - Generated response: I'm not sure how to respond to that.
+2025-02-25 23:52:46,899 - INFO - Received input: how are you today
+2025-02-25 23:52:47,263 - INFO - Generated response: I'm not sure how to respond to that.
+2025-02-25 23:53:11,362 - INFO - Received input: hello
+2025-02-25 23:53:11,421 - INFO - Generated response: Hi there! How can I assist you?
+2025-02-25 23:53:45,772 - INFO - Received input: hello
+2025-02-25 23:53:45,841 - INFO - Generated response: Hi there! How can I assist you?
+2025-02-25 23:54:31,894 - INFO - Received input: can you tell me about
+2025-02-25 23:54:32,255 - INFO - Generated response: I'm not sure how to respond to that.
+2025-02-26 00:02:46,851 - User: hi | Response: I'm not sure how to respond to that.
+2025-02-26 00:02:55,405 - User: hello | Response: Hi there! How can I assist you?
+2025-02-26 00:03:00,809 - User: hi | Response: I'm not sure how to respond to that.
+2025-02-26 00:09:37,461 - User: hi | Response: I'm not sure how to respond to that.
+2025-02-26 00:09:45,407 - User: how are you today | Response: I'm not sure how to respond to that.
+2025-02-26 00:10:33,370 - User: how are you today | Response: I'm not sure how to respond to that.
+2025-02-26 00:10:35,374 - User: how are you today | Response: I'm not sure how to respond to that.
+2025-02-26 00:11:32,965 - User: weather | Response: I can check the weather for you.
+2025-02-26 00:13:27,271 - User: hi | Response: I'm not sure how to respond to that.
+2025-02-26 00:13:34,450 - User: why | Response: I'm not sure how to respond to that.
+2025-02-26 00:13:40,244 - User: what | Response: I'm not sure how to respond to that.
+2025-02-26 00:19:35,220 - User: hi | Response: Hi there! How can I help you today?
+
+2025-02-26 00:19:55,396 - User: tell me about nelson mandela in one line | Response: Nelson Mandela was an anti-apartheid revolutionary, political leader, and philanthropist who served as President of South Africa.
+
+2025-02-26 00:20:09,074 - User: what | Response: "What" is a question word.  It's used to ask for information about something.  It can be used in many different ways, such as:
+
+* **Asking for information about something unknown:** "What is that?"
+* **Asking for a repetition or clarification:** "What did you say?"
+* **Asking for a reason or explanation:** "What made you do that?"
+* **Expressing surprise or disbelief:** "What?!"
+* **Asking about choices or possibilities:** "What are my options?"
+
+Could you please clarify what you'd like to know?  Perhaps you meant to type more?
+
+2025-02-26 00:21:08,752 - User: meaning of wanderlust | Response: Wanderlust is a strong desire or impulse to wander or travel and explore the world.  It's a feeling of restlessness and a yearning to experience new places, cultures, and adventures.  It goes beyond simply wanting a vacation; it's a deep-seated passion for exploration and discovery.
+
+2025-02-26 00:23:43,841 - User: now tell me about wonder | Response: "Wonder" can refer to several things, so to give you the best answer, I need a bit more context.  Are you asking about:
+
+* **The book *Wonder* by R.J. Palacio?** This is a popular children's novel about a boy with facial differences entering a mainstream school.
+* **The emotion of wonder?**  This refers to a feeling of awe, amazement, and curiosity.
+* **Stevie Wonder?** The acclaimed singer-songwriter.
+* **Something else entirely?**
+
+Please clarify your question so I can provide you with more specific information.
+
